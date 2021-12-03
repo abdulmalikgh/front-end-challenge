@@ -1,3 +1,5 @@
+@import '../scss/color.scss';
+
 footer {
   padding-right: 10%;
   padding-left: 10%;
@@ -6,8 +8,8 @@ footer {
   font-weight: normal;
   font-size: 14px;
   line-height: 180%;
-  color: #484848;
-  margin-top: 40px;
+  color: $text-color;
+  margin-top: 80px;
   margin-bottom: 40px;
 
   .footer_navigation {
@@ -18,7 +20,7 @@ footer {
       h2 {
         font-family: Airbnb Cereal App;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 160%;
         color: #1a1a1a;
@@ -34,7 +36,7 @@ footer {
           }
           a {
             text-decoration: none;
-            color: #1a1a1a;
+            color: $text-dark;
           }
         }
       }
@@ -78,9 +80,9 @@ footer {
   }
   .facebook,
   .twitter {
-    background: #ffffff;
+    background: $white;
   }
   .instgram {
-      background-color: #098B71;
+      background-color:  #098B71;
   }
 }

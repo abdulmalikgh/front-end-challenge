@@ -1,0 +1,94 @@
+@import "../scss/color.scss";
+main {
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 27px;
+  height: 814px;
+  padding-top: 30px;
+}
+
+// sidebar
+.sidebar {
+  width: 288px;
+  height: 814px;
+  background: $section-background;
+  box-shadow: 0px 2px 15px rgba(108, 126, 147, 0.1);
+  border-radius: 6px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .avatar-card {
+    width: 158px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .avatar{
+        position:relative;
+        .avatar-upload{
+            position: absolute;
+            right:0;
+            bottom: 10px;
+            width:20px;
+            height: 20px;
+            background:$button-bg ;
+            border-radius: 50%;
+            outline:none;
+            border:none;
+        }
+    }
+    .avatar-text {
+      p {
+        &:first-of-type {
+          font-family: Airbnb Cereal App;
+          margin-top: 12px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 160%;
+          color: $text-dark;
+          text-align: center;
+        }
+        &:last-of-type {
+          font-family: Airbnb Cereal App;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 160%;
+          color: $text-light;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .edit-profile-container {
+    padding-top: 10px;
+    button {
+      width: 135px;
+      height: 35px;
+      background: $button-bg;
+      outline: none;
+      border: none;
+      font-family: Airbnb Cereal App;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 160%;
+      color: $section-background;;
+      border-radius: 6px;
+    }
+  }
+}
+// main
+.main {
+  background: $section-background;
+  box-shadow: 0px 2px 15px rgba(108, 126, 147, 0.1);
+  border-radius: 6px;
+  height: 814px;
+  width: calc(100% - 315px);
+}
