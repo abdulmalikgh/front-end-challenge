@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Airbnb Cereal App";
   src: local("Airbnb Cereal App"),
-   url("./assets/fonts/AirbnbCereal-Medium.ttf") format("truetype");
+   url("./assets/fonts/AirbnbCereal-Book.ttf") format("truetype");
     font-weight: normal;
   }
 
@@ -24,10 +24,13 @@ dl,
 dd {
   margin: 0;
 }
-ul[role='list'],
-ol[role='list'] {
+ul
+ol {
   list-style: none;
+  margin:0px;
+  padding:0px;
 }
+
 html:focus-within {
   scroll-behavior: smooth;
 }

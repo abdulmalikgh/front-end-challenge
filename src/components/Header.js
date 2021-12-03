@@ -1,12 +1,15 @@
 import "../assets/scss/header.scss"
-
+import logoIcon from '../assets/images/menu-left-2-icon 1.svg'
+import searchIcon from '../assets/images/Search.svg'
 function Header() {
     return (
         <header className="header">
             <nav>
                 <div className="__search">
                     <input name="search" className="_search_input"></input>
-                    <button className="search_icon"></button>
+                    <button className="search_icon">
+                    <img width="24px" height="24px" src={searchIcon} alt="" />
+                    </button>
                 </div>
 
                 <div className="right_side_nav">
@@ -22,7 +25,7 @@ function Header() {
                     </div>
                     <div className="icon">
                         <button>
-                            
+                            <img src={logoIcon} alt="" />
                         </button>
                     </div>
                 </div>
