@@ -434,7 +434,20 @@ main {
     bottom: 0;
   }
 }
+// user onboarding overflow;
+@media screen  and (min-width: 768px) and (max-width: 1400px) {
+  #user_onboarding{
+    p{
+      &:first-of-type{
+        font-size: 12px!important;
+      }
+      &:last-of-type{
+        font-size: 10px!important;
+      }
+    }
+  }
 
+}
 //media queries
 @media screen and (max-width: 1300px) {
   .sidebar {

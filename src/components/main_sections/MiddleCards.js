@@ -87,7 +87,7 @@ export default function MiddleCards() {
                             <button className="btn_yollow">
                                 <img src={profileRound} alt="" />
                             </button>
-                            <div className='tatal_sales'>
+                            <div className='tatal_sales ' id="user_onboarding">
                                 <p className="total">
                                     User Onboarding
                                 </p>
