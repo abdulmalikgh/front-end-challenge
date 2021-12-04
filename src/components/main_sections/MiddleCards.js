@@ -7,7 +7,8 @@ export default function MiddleCards() {
     return (
         <div>
             <div className="middle_cards">
-                <div className='totalSsales'>
+
+                <div className='totalSsales _with_small_screen_margin'>
                     <div className="_header">
                         <div className="title">
                             <button>
@@ -69,7 +70,7 @@ export default function MiddleCards() {
             </div>
 
             <div className="middle_cards">
-                <div className='profit'>
+                <div className='profit _with_small_screen_margin'>
                     <div className="_header">
                         <p className="dailyProfittitle">
                             Daily Active Clients

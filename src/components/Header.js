@@ -1,13 +1,14 @@
 import "../assets/scss/header.scss"
 import logoIcon from '../assets/images/menu-left-2-icon 1.svg'
 import searchIcon from '../assets/images/Search.svg'
+import iconBars from '../assets/images/bars.svg'
 function Header() {
     return (
         <header className="header">
             <nav>
                 <div className="icon _icon_small">
                         <button>
-                            <img src={logoIcon} alt="" />
+                            <img width="24px" height="24px" src={iconBars} alt="" />
                         </button>
                     </div>
                 <div className="__search">

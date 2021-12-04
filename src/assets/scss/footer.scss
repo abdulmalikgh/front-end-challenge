@@ -95,7 +95,6 @@ footer {
 }
 @media screen and (max-width: 768px) {
   footer {
-    border: 1px solid red;
     font-size: 13px;
     margin-top: 80px;
     margin-bottom: 40px;
@@ -131,7 +130,6 @@ footer {
 }
 @media screen and (max-width: 540px) {
   footer {
-    border: 1px solid red;
     margin-top: 40px;
     margin-bottom: 40px;
   }
@@ -149,16 +147,20 @@ footer {
   }
   .termsAndPrivacy {
     padding-top: 39px;
+    flex-direction: column;
     p {
-      padding-right: 0.5em;
+      padding-right: 0em;
     }
     ul {
       li {
-        list-style: square;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        list-style: none;
+        margin-left: 0em;
+        margin-right: 0em;
       }
     }
+  }
+  .last{
+    padding-left: 1em;
   }
 }
 @media screen and (max-width: 340px) {
@@ -167,11 +169,7 @@ footer {
   }
   .termsAndPrivacy {
     padding-top: 39px;
-    display: flex;
-    flex-direction: column;
-    p {
-      padding-right: 1em;
-    }
+
     ul {
       margin: 0px;
       padding: 0px;

@@ -8,7 +8,7 @@ function TermsAndPrivacy(){
                 <li>
                     Terms & Conditions
                 </li>
-                <li>
+                <li className="last">
                     Privacy Policy
                 </li>
             </ul>
