@@ -10,7 +10,7 @@ function Footer() {
         <footer className="footer">
             <div className="footer_inner">
                 <div className="footer_navigation">
-                    <div className="footer_nav_section">
+                    <div className="footer_nav_section __some_text">
                         <p className="side_text">Counter Delivery, Carters Beach</p>
                         <p>PostCentre, Westport</p>
                     </div>
