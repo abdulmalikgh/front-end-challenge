@@ -5,6 +5,11 @@ function Header() {
     return (
         <header className="header">
             <nav>
+                <div className="icon _icon_small">
+                        <button>
+                            <img src={logoIcon} alt="" />
+                        </button>
+                    </div>
                 <div className="__search">
                     <input name="search" className="_search_input"></input>
                     <button className="search_icon">
