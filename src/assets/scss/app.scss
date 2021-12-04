@@ -172,7 +172,6 @@ main {
   width: calc(100% - 315px);
   padding: 30px;
 
-
   //   TOP CARDS
   .top_cards {
     width: 100%;
@@ -435,9 +434,82 @@ main {
     width: 100%;
   }
 }
-
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .top_cards {
+    .card {
+      // padding: 15px 10px;
+    }
+    .with_progress {
+      .top {
+        .title {
+          font-size: 14px !important;
+        }
+        .description {
+          font-size: 12px !important;
+        }
+      }
+      .percentage {
+        .bigger {
+          font-size: 30px !important;
+        }
+        .smaller {
+          font-size: 12px !important;
+        }
+      }
+      .yearly-goal {
+        p {
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
+  ._header {
+    .side_icon {
+      outline: none;
+      border: none;
+      background: #fff;
+    }
+    .title {
+      display: flex;
+      button {
+        width: 30px;
+        height: 30px;
+        margin-right: 14px !important;
+      }
+      .tatal_sales {
+        .total {
+          font-size: 14px !important;
+        }
+        .amount {
+          font-size: 11px !important;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+  .dailyProfittitle {
+    font-size: 14px !important;
+  }
+  .onboarding {
+    font-size: 11px !important;
+  }
+  .body {
+    .text {
+      div {
+        .top {
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
-  .main, main{
+  .main,
+  main {
     height: auto;
     max-height: 100%;
   }
@@ -447,8 +519,8 @@ main {
     justify-content: space-between;
     flex-direction: column;
     .card {
-      width: 100%!important;
-      &:not(:last-of-type){
+      width: 100% !important;
+      &:not(:last-of-type) {
         margin-bottom: 20px;
       }
     }
@@ -456,49 +528,47 @@ main {
   .middle_cards {
     flex-direction: column;
     .totalSsales {
-      width: 100%!important;
+      width: 100% !important;
     }
     .profit {
-      width: 100%!important;
+      width: 100% !important;
     }
   }
-  ._with_small_screen_margin{
+  ._with_small_screen_margin {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .main{
-    padding:15px;
+  .main {
+    padding: 15px;
   }
   .top_cards {
-    .card{
+    .card {
       // padding: 15px 10px;
     }
     .with_progress {
       .top {
         .title {
-          font-size: 14px!important;
-
+          font-size: 14px !important;
         }
         .description {
-          font-size: 12px!important;
+          font-size: 12px !important;
         }
       }
       .percentage {
         .bigger {
-          font-size: 30px!important;
+          font-size: 30px !important;
         }
         .smaller {
-          font-size: 12px!important;
+          font-size: 12px !important;
         }
       }
       .yearly-goal {
         p {
-          font-size: 11px!important;
+          font-size: 11px !important;
         }
       }
-
     }
   }
 
@@ -513,30 +583,30 @@ main {
       button {
         width: 30px;
         height: 30px;
-        margin-right: 14px!important;
+        margin-right: 14px !important;
       }
       .tatal_sales {
         .total {
-          font-size: 14px!important;
+          font-size: 14px !important;
         }
         .amount {
-          font-size: 11px!important;
+          font-size: 11px !important;
           line-height: 140%;
         }
       }
     }
   }
   .dailyProfittitle {
-    font-size: 14px!important;
+    font-size: 14px !important;
   }
   .onboarding {
-    font-size: 11px!important;
+    font-size: 11px !important;
   }
   .body {
     .text {
       div {
         .top {
-          font-size: 18px!important;
+          font-size: 18px !important;
         }
       }
     }
