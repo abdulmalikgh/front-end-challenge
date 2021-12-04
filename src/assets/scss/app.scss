@@ -10,7 +10,7 @@ main {
   padding-top: 30px;
 }
 
-// sidebar
+// ALL SIDEBAR
 .sidebar {
   width: 288px;
   height: 814px;
@@ -65,9 +65,10 @@ main {
       }
     }
   }
-
+  //EDIT CONTAINER
   .edit-profile-container {
     padding-top: 10px;
+    padding-bottom: 24px;
     button {
       width: 135px;
       height: 35px;
@@ -83,7 +84,7 @@ main {
       border-radius: 6px;
     }
   }
-
+  //PROFILE
   .profile {
     width: 100%;
     height: 74px;
@@ -115,20 +116,49 @@ main {
         border: 1px solid #d1d1d1;
         border-radius: 6px 0px 0px 6px;
         padding-left: 15px;
-        &:focus{
-            outline: none;
+        &:focus {
+          outline: none;
         }
       }
       button {
         outline: none;
         width: 54px;
         border-radius: 0px 6px 6px 0px;
-        border-left: 0px!important;
+        border-left: 0px !important;
         border: 1px solid #d1d1d1;
         background: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+    }
+  }
+
+  // SIDEBAR NAV
+  .side_nav {
+    width: 100%;
+    ul {
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      li {
+        list-style: none;
+        border-top:1px solid  #E8E8E8;;
+        &:last-of-type{
+            border-bottom:1px solid  #E8E8E8;;
+        }
+        a {
+          display: flex;
+          justify-content: space-between;
+          text-decoration: none;
+          font-family: Airbnb Cereal App;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 160%;
+          color: $text-dark;
+          padding:12px;
+        }
       }
     }
   }
