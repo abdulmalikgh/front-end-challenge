@@ -2,6 +2,8 @@ import "../assets/scss/header.scss"
 import logoIcon from '../assets/images/menu-left-2-icon 1.svg'
 import searchIcon from '../assets/images/Search.svg'
 import iconBars from '../assets/images/bars.svg'
+import Cancel from '../assets/images/cancel.svg'
+
 function Header() {
     let toggleNavBar = function() {
         let mainSidebar = document.getElementById('mainSidebar')
@@ -21,6 +23,14 @@ function Header() {
                     <button className="search_icon">
                     <img width="24px" height="24px" src={searchIcon} alt="" />
                     </button>
+                    <div className="input_placeholder" id="__id">
+                        <div className='with_icon'>
+                            Granger, IA &nbsp; <img src={ Cancel } alt=""/>
+                        </div>
+                        <p className="add_more">
+                            Add More
+                        </p>
+                    </div>
                 </div>
 
                 <div className="right_side_nav">

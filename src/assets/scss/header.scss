@@ -13,9 +13,9 @@
     height: inherit;
     ._icon_small {
       display: none;
-      button{
-        width: 32px!important;
-        height: 32px!important;
+      button {
+        width: 32px !important;
+        height: 32px !important;
         margin-right: 2em;
       }
     }
@@ -26,6 +26,29 @@
       width: 346px;
       display: flex;
       align-items: center;
+      .input_placeholder {
+        margin-left: 10px;
+        position: absolute;
+        display: flex;
+        font-family: Airbnb Cereal App;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 160%;
+        color: #1a1a1a;
+        display: flex;
+        align-items: center;
+        .with_icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          background: #e8e8e8;
+          border-radius: 6px;
+          padding: 2px 8px;
+          margin-right: 10px;
+        }
+      }
       input {
         height: inherit;
         width: calc(100% - 54px);
@@ -130,10 +153,10 @@
     max-width: 300px;
   }
   .text {
-    ul{
+    ul {
       li {
         &:first-of-type {
-          padding-right: 23px!important;
+          padding-right: 23px !important;
         }
       }
     }
@@ -175,4 +198,20 @@
   .right_side_nav {
     display: none !important;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1010px) {
+  .add_more {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  .add_more {
+    display: none;
+  }
+}
+@media screen and (max-width: 260px) {
+    #__id {
+      display: none !important;
+    }
 }
