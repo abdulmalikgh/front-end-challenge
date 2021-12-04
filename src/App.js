@@ -6,16 +6,22 @@ import './assets/scss/app.scss';
 import { useState, useEffect } from 'react'
 
 function App() {
+  
   const size = useWindowSize();
   if(size.width > 992) {
     let mainSidebar = document.getElementById('mainSidebar')
     mainSidebar.style.display = 'flex'
     mainSidebar.style.height = '814px' 
+  } else {
+    let mainSidebar = document.getElementById('mainSidebar')
+    if(mainSidebar) {
+      mainSidebar.style.display = 'none'
+      mainSidebar.style.height = '100vh'
+    } 
   }
   return (
     <div className="App">
       <Header />
-      <p>{size.width} </p>
       <main>
         <Sidebar />
         <Main />

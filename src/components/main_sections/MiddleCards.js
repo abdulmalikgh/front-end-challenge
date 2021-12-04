@@ -3,6 +3,7 @@ import money from '../../assets/images/money.svg'
 import more from '../../assets/images/More.svg'
 import profileRound from '../../assets/images/profile_roud.svg'
 import DailyProfit from './DailyProfit'
+import DoughnutCoponent from './DoughnutCoponent'
 export default function MiddleCards() {
     return (
         <div>
@@ -29,14 +30,14 @@ export default function MiddleCards() {
                     </div>
                     <div className="body">
                         <div className="dognut">
-                            
+                            <DoughnutCoponent  passedData = { [80,20] } colors = {['#016450', '#EAECEE']} />
                         </div>
                         <div className="text">
                             <div className="number_top">
-                                <p className="top number_top">
+                                <p className="top">
                                     $2,595
                                 </p>
-                                <p className="bottom">
+                                <p className="bottom number_top">
                                     Invoiced
                                 </p>
                             </div>
@@ -101,7 +102,7 @@ export default function MiddleCards() {
                     </div>
                     <div className="body">
                         <div className="dognut">
-
+                        <DoughnutCoponent passedData = { [30,70] } colors = {['#FACF55', '#EAECEE']}/>
                         </div>
                         <div class="text">
                             <div>

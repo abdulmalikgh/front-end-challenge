@@ -28,21 +28,40 @@ import {
             position:false,
         },
     },
+    scales: {
+        x: {
+          display: false,
+          title: {
+            display: false,
+            text: 'Month'
+          },
+        },
+        y: {
+          display: false,
+          position: 'right',
+          title: {
+            display: false,
+            text: 'Value'
+          }
+        },
+    }
   };
   export const data = {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
-        data: [21,15,8,29,21,8,19],
+        label: 'Revenue',
+        display: false,
+        data: [32,26,19,40,32,25,30],
         backgroundColor: '#ff8433',
+        borderRadius: 2
       },
     ],
   };
 export default function RevenueChart() {
     return (
         <div className="graph">
-            {/* <Bar strokeWidth='0'  options={options} data={data} /> */}
+            <Bar  options={options} data={data} />
         </div>
     )
 }
