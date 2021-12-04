@@ -64,7 +64,7 @@ export default function MiddleCards() {
                         </div> 
                         <div className="chart">
                             <div className="chart__inner">
-                                 <DailyProfit />
+                                 <DailyProfit bgColor={'rgba(255, 132, 51, 0.1)'}  color={'#FF8433'}/>
                             </div>
                         </div>
                     </div>
@@ -80,6 +80,11 @@ export default function MiddleCards() {
                             <img src={more} alt="" />
                         </button>
                     </div> 
+                    <div className="chart">
+                        <div className="chart__inner">
+                                <DailyProfit bgColor={'rgba(52, 131, 115, 0.1)'}  color={'#348373'} />
+                        </div>
+                    </div>
                 </div>
                 <div className='totalSsales'>
                     <div className="_header">

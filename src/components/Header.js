@@ -13,7 +13,7 @@ function Header() {
             <nav>
                 <div className="icon _icon_small">
                         <button onClick = { toggleNavBar }>
-                            <img width="24px" height="24px" src={iconBars} alt="" />
+                            <img  src={iconBars} alt="" />
                         </button>
                     </div>
                 <div className="__search">

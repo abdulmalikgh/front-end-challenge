@@ -13,6 +13,11 @@
     height: inherit;
     ._icon_small {
       display: none;
+      button{
+        width: 32px!important;
+        height: 32px!important;
+        margin-right: 2em;
+      }
     }
     .__search {
       background: $page-bg;
@@ -41,7 +46,7 @@
         outline: none;
         border: none;
         margin: none;
-        background: $bg-green;
+        background: $button-bg;
         border-radius: 0px 6px 6px 0px;
         display: flex;
         justify-content: center;
@@ -49,6 +54,7 @@
       }
     }
     .right_side_nav {
+      width: 100%;
       display: flex;
       justify-content: flex-end;
       column-gap: 116px;
@@ -76,6 +82,7 @@
             }
             a {
               text-decoration: none;
+
               font-family: Airbnb Cereal App;
               font-style: normal;
               font-weight: normal;
@@ -119,8 +126,17 @@
     padding-right: 5%;
     padding-left: 5%;
   }
-  .__search{
+  .__search {
     max-width: 300px;
+  }
+  .text {
+    ul{
+      li {
+        &:first-of-type {
+          padding-right: 23px!important;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 768px) {

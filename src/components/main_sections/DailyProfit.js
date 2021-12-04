@@ -8,6 +8,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 ChartJS.register(
@@ -17,16 +18,23 @@ ChartJS.register(
     LineElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
+    Filler
   );
   export const options = {
     responsive: true,
     maintainAspectRatio: false,
+    datasetFill : true,
     plugins: {
       legend: {
         display:false,
         position: "top",
         align: "center",
+        abels: {
+            font: {
+                size: 9
+            }
+        }
       },
       title: {
         display: false,
@@ -34,21 +42,22 @@ ChartJS.register(
     },
     scales: {
         x: {
-          display: true,
-          title: {
-            display: false,
-            text: 'Month'
-          },
-        ticks: {
-                fontFamily: "",
-                beginAtZero:true,
-                fontColor: '#9EA0A5',
-                fontSize: 20,
-                padding: 15
-        },
+            display: true,
+            title: {
+                display: false,
+                text: 'Month'
+            },
+            ticks: {
+                    fontFamily: "",
+                    beginAtZero:true,
+                    fontColor: '#9EA0A5',
+                    fontSize:9,
+                    padding: 10
+            },
         },
         y: {
           display: true,
+          beginAtZero: true,
           position: 'right',
           title: {
             display: false,
@@ -59,18 +68,21 @@ ChartJS.register(
   };
   
   const labels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-  export const data = {
-    labels,
-    datasets: [
-      {
-        fill: 'origin',
-        data:[10,12,12,23,23,45,23],
-        borderColor: '#FF8433',
-        backgroundColor: '#FF8433',
-      }
-    ],
-  };
-  
-export default function DailyProfit() {
+
+export default function DailyProfit({color,bgColor}) {
+    const data = {
+        labels,
+        datasets: [
+        {
+            label: "",
+            data: [115,78,93,132,108,62,84],
+            fill: true,
+            borderColor: color,
+            backgroundColor: bgColor,
+            tension:0,
+            lineWidth:1
+        }
+        ],
+      };
     return <Line options={options} data={data} />;
 }
