@@ -19,7 +19,8 @@ import {
   );
   const labels = ['', '', '', '', '', '', ''];
   export const options = {
-    // responsive: true,
+    responsive: true,
+    maintainAspectRatio: false,
     scaleShowVerticalLines: false,
     plugins: {
         scaleShowVerticalLines: false,
@@ -41,7 +42,7 @@ import {
 export default function RevenueChart() {
     return (
         <div className="graph">
-            <Bar strokeWidth='0' width="100%" height="22px" options={options} data={data} />
+            {/* <Bar strokeWidth='0'  options={options} data={data} /> */}
         </div>
     )
 }

@@ -176,7 +176,7 @@ main {
   .top_cards {
     width: 100%;
     display: flex;
-    column-gap: 25px;
+    justify-content: space-between;
     .card {
       height: 175px;
       border: 1px solid $divider;
@@ -254,12 +254,161 @@ main {
       }
     }
     .revenue {
-        .graph{
-        }
+      .graph {
+      }
       .percentage {
         margin-bottom: 5px;
-       .smaller{ color: orange;}
+        .smaller {
+          color: orange;
+        }
       }
     }
   }
+  //   middle
+  .middle_cards {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .totalSsales {
+      width: 33%;
+      height: 261px;
+      border: 1px solid $divider;
+      padding: 20px 24px;
+      border-radius: 6px;
+    }
+    .profit {
+      width: 65%;
+      height: 261px;
+      border: 1px solid $divider;
+      padding: 20px 24px;
+      border-radius: 6px;
+    }
+  }
+}
+
+._header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  border-bottom: 1px solid $divider;
+  .side_icon {
+    outline: none;
+    border: none;
+    background: #fff;
+  }
+  .title {
+    display: flex;
+    button {
+      width: 36px;
+      height: 36px;
+      background: $button-bg;
+      border-radius: 3.20245px;
+      outline: none;
+      border: none;
+      margin-right: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .tatal_sales {
+      padding: 0px;
+      .total {
+        font-family: Airbnb Cereal App;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: #3e3f42;
+      }
+      .amount {
+        font-family: Airbnb Cereal App;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 140%;
+        color: $light-green;
+      }
+    }
+  }
+}
+
+.dailyProfittitle {
+  font-family: Airbnb Cereal App;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #3e3f42;
+}
+
+.btn_yollow {
+  background: $yellow !important;
+}
+.onboarding {
+  font-family: Airbnb Cereal App;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+  color: #a3a3a3;
+}
+
+.body {
+  display: flex;
+  height: 182px;
+  align-items: center;
+  justify-content: center;
+  .dognut {
+    width: calc(100% - 102px);
+  }
+  .text {
+    width: 102px;
+    height: 100%;
+    div {
+      height: 90px;
+      padding-top:auto;
+      &:first-of-type {
+        border-bottom: 1px solid $divider;
+      }
+      .top {
+        font-family: Airbnb Cereal App;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 138%;
+        text-align: right;
+        color: #1a1a1a;
+      }
+      .bottom {
+        font-family: Airbnb Cereal App;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 135%;
+        text-align: right;
+        color: #a3a3a3;
+      }
+    }
+  }
+}
+
+.number_top{
+    padding-top: 15px;  
+}
+.number_bottom{
+    padding-top:10px;
+}
+.chart{
+    width:100%;
+    position: relative;
+    height: 182px;
+    .chart__inner{
+        width:100%;
+        height: 131px;
+        position: absolute;
+        bottom:0;
+    }
 }
