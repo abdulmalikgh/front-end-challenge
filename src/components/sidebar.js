@@ -6,7 +6,7 @@ import SidebarNav from './SidebarNav'
 function Sidebar() {
 
     return (
-        <div className="sidebar">
+        <div className="sidebar" id="mainSidebar">
             <Avatar />
             <EditProfile/>
             <SidebarNav />

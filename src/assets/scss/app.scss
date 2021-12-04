@@ -19,8 +19,10 @@ main {
   border-radius: 6px;
   padding: 24px 20px;
   display: flex;
+  transition: all 10s ease-in-out;
   flex-direction: column;
   align-items: center;
+  position: relative;
   .avatar-card {
     width: 158px;
     height: 145px;
@@ -64,6 +66,18 @@ main {
         }
       }
     }
+  }
+  #close{
+    position: absolute;
+    right: 0;
+    margin:1em;
+    top:0;
+    z-index: 1000;
+    outline: none;
+    border:none;
+    background: transparent;
+    cursor: pointer;
+    display: none;
   }
   //EDIT CONTAINER
   .edit-profile-container {
@@ -423,14 +437,16 @@ main {
   }
 }
 @media screen and (max-width: 992px) {
-  main {
+  #close{
+   display: block!important;
+  }
+  main{
     padding-right: 5%;
     padding-left: 5%;
   }
   .sidebar {
     display: none;
     width:288px;
-    border:1px solid red;
     height: 100vh;
     position: fixed;
     left: 0;

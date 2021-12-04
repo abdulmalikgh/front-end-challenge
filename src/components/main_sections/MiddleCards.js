@@ -31,7 +31,7 @@ export default function MiddleCards() {
                         <div className="dognut">
                             
                         </div>
-                        <div class="text">
+                        <div className="text">
                             <div className="number_top">
                                 <p className="top number_top">
                                     $2,595

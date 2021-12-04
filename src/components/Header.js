@@ -3,11 +3,16 @@ import logoIcon from '../assets/images/menu-left-2-icon 1.svg'
 import searchIcon from '../assets/images/Search.svg'
 import iconBars from '../assets/images/bars.svg'
 function Header() {
+    let toggleNavBar = function() {
+        let mainSidebar = document.getElementById('mainSidebar')
+        mainSidebar.style.display = 'flex'
+      
+    }
     return (
         <header className="header">
             <nav>
                 <div className="icon _icon_small">
-                        <button>
+                        <button onClick = { toggleNavBar }>
                             <img width="24px" height="24px" src={iconBars} alt="" />
                         </button>
                     </div>
