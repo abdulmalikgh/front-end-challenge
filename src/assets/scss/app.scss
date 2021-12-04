@@ -143,9 +143,9 @@ main {
       margin: 0px;
       li {
         list-style: none;
-        border-top:1px solid  #E8E8E8;;
-        &:last-of-type{
-            border-bottom:1px solid  #E8E8E8;;
+        border-top: 1px solid #e8e8e8;
+        &:last-of-type {
+          border-bottom: 1px solid #e8e8e8;
         }
         a {
           display: flex;
@@ -157,7 +157,7 @@ main {
           font-size: 16px;
           line-height: 160%;
           color: $text-dark;
-          padding:12px;
+          padding: 12px;
         }
       }
     }
@@ -170,4 +170,96 @@ main {
   border-radius: 6px;
   height: 814px;
   width: calc(100% - 315px);
+  padding: 30px;
+
+  //   TOP CARDS
+  .top_cards {
+    width: 100%;
+    display: flex;
+    column-gap: 25px;
+    .card {
+      height: 175px;
+      border: 1px solid $divider;
+      width: 31.7%;
+      padding: 20px 24px;
+      border-radius: 6px;
+    }
+    .with_progress {
+      .top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        .title {
+          font-family: Airbnb Cereal App;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 160%;
+          color: $text-color;
+        }
+        .description {
+          font-family: Airbnb Cereal App;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 180%;
+          text-align: right;
+          color: #9ea0a5;
+        }
+      }
+      .percentage {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        .bigger {
+          font-family: Airbnb Cereal App;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 36px;
+          line-height: 127%;
+          color: $text-dark;
+        }
+        .smaller {
+          font-family: Airbnb Cereal App;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 180%;
+          text-align: right;
+          color: #348373;
+        }
+      }
+      .yearly-goal {
+        margin-top: 14px;
+        p {
+          font-family: Airbnb Cereal App;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 140%;
+          color: #a3a3a3;
+        }
+      }
+      .progress {
+        width: 100%;
+        background: $divider;
+        border-radius: 2px;
+        height: 4px;
+        .progress_inner {
+          background: $button-bg !important;
+          width: 70%;
+          height: 4px;
+          border-radius: 2px;
+        }
+      }
+    }
+    .revenue {
+        .graph{
+        }
+      .percentage {
+        margin-bottom: 5px;
+       .smaller{ color: orange;}
+      }
+    }
+  }
 }
