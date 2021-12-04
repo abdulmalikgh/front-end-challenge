@@ -429,6 +429,15 @@ main {
   }
   .sidebar {
     display: none;
+    width:288px;
+    border:1px solid red;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10000;
+    overflow-y: scroll;
   }
   .main {
     width: 100%;
@@ -540,6 +549,9 @@ main {
 }
 
 @media screen and (max-width: 540px) {
+  .sidebar {
+    padding-bottom: 5em;
+  }
   .main {
     padding: 15px;
   }
